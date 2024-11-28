@@ -42,7 +42,7 @@ jobs:
         run: pnpm i -g @antfu/ni
 
       - name: Install dependencies
-        run: nci
+        run: pnpm i
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/
